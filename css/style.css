@@ -1,76 +1,119 @@
-:root{
-    --color--primary:  #2584ff;
+:root {
+    --color--primary: #2584ff;
     --color--secondary: #00d9ff;
-    --color--accent:#ff3400;
+    --color--accent: #ff3400;
     --color--headings: #1b0760;
-    --color--body:#918ca4;
+    --color--body: #918ca4;
 }
-html{
+
+html {
     font-size: 62.5%;
 }
 
 /* typography*/
 
-body{
+body {
     font-size: 2.4rem;
     font-family: Inter, Arial, Helvetica, sans-serif;
     color: var(--color--body);
     line-height: 1.5;
 }
+
 h1,
 h2,
-h3{   
+h3 {
     color: var(--color--headings);
     margin-bottom: 2rem;
 }
-h1{
+
+h1 {
     font-size: 7rem;
 }
-h2{
+
+h2 {
     font-size: 4rem;
 }
-h3{
+
+h3 {
     font-size: 3rem;
-} 
-p{
-    margin-top:0;
+}
+
+p {
+    margin-top: 0;
 }
 @media screen and (min-width:1024px) {
-    body{
+    body {
         font-size: 1.8rem;
     }
-    h1{
+
+    h1 {
         font-size: 8rem;
     }
-    h2{
+
+    h2 {
         font-size: 4rem;
     }
-    h3{
+
+    h3 {
         font-size: 2.4rem;
     }
 }
 
 /*links*/
-a{
+a {
     text-decoration: none;
 }
-.link-arrow{
-    color : var(--color--accent);
+
+.link-arrow {
+    color: var(--color--accent);
     text-transform: uppercase;
     font-size: 2rem;
-    font-weight:bold;
+    font-weight: bold;
 }
-.link-arrow::after{
-    content:"-->";
+
+.link-arrow::after {
+    content: "-->";
     margin-left: 5px;
-    transition:margin 0.15s;
+    transition: margin 0.15s;
 }
-.link-arrow:hover::after{
+
+.link-arrow:hover::after {
     margin-left: 10px;
 
 }
-@media screen and (min-width:1024px){
-    .link-arrow{
+
+@media screen and (min-width:1024px) {
+    .link-arrow {
         font-size: 1.5rem;
     }
+}
+
+/* Badges */
+.badge {
+    border-radius: 40px;
+    padding: 0.5rem 2rem;
+    font-weight: 600;
+    white-space: nowrap;
+    font-size: 2rem;
+}
+.badge--small{
+    font-size: 1.6rem;
+}
+
+.badge--primary{
+    background: var(--color--primary);
+    color:#fff;
+}
+
+.badge--secondary{
+    background: var(--color--secondary);
+    color: #fff;
+}
+@media screen and (min-width: 1024px ){
+   .badge{
+    font-size: 1.5rem;
+   }
+   .badge--small{
+    font-size: 1.2rem;
+   }
 }
