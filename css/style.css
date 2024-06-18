@@ -1,3 +1,8 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
 :root {
     --color--primary: #2584ff;
     --color--secondary: #00d9ff;
@@ -156,4 +161,59 @@ a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
+}
+/*Buttons*/
+.btn{
+    font-size:1.8rem;
+    font-weight:600;
+    text-transform: uppercase;
+    padding :2rem 3rem;
+    text-align: center;
+    border: 0;
+    margin-bottom: 1rem;
+    border-radius: 40px;
+    cursor:pointer;
+    white-space: nowrap;
+}
+.btn--primary{
+    background-color: var(--color--primary);
+    color: #fff;
+}
+.btn--primary:hover{
+    background: #3a8ffe;
+
+}
+.btn--secondary{
+    background: var(--color--secondary);
+    color:#fff; 
+}
+.btn--secondary:hover{
+    background: #00c8eb;
+
+}
+.btn--accent{
+    background: var(--color--accent);
+    color:#fff;
+}
+.btn--accent:hover{
+background:#ec3000;
+}
+.btn--block{
+    width:100%;
+    display: inline-block;
+}
+.btn--outline{
+    background:#fff;
+    color: var(--color--headings);
+    border:2px solid var(--color--headings);
+}
+.btn--outline:hover{
+    background-color: var(--color--headings);
+    color:#fff;
+}
+@media screen and (min-width:1024px){
+    .btn{
+        font-size: 14px;
+    }
+
 }
