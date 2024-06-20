@@ -417,3 +417,12 @@ content: open-quote;
         bottom: 18px;
     }
 } 
+/* grid*/
+.grid{
+    display: grid;
+}
+@media screen and (min-width:796px) {
+    .grid--1x2{
+    grid-template-columns: repeat(2, 1fr);
+    }
+}
