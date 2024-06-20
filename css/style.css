@@ -202,7 +202,10 @@ a {
     cursor: pointer;
     white-space: nowrap;
 }
-
+.btn--stretch{
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
 .btn--primary {
     background-color: var(--color--primary);
     color: #fff;
@@ -461,4 +464,39 @@ content: open-quote;
 .testimonial .quote{
     margin-left: 6rem;
 }
+}
+/* Callouts*/
+.callout{
+padding: 3.25rem;
+border-radius: 5px;
+}
+.callout--primary{
+    background: var(--color--primary );
+    color: #fff;
+}
+
+.callout__heading{
+    color: #fff;
+    margin-top: 0;
+    font-size:3rem;
+}
+.callout .btn{
+    justify-self: center;
+    align-self: center;
+}
+.callout__content{
+    text-align:  center;
+    font-size: 2rem;
+}
+@media screen and (min-width: 796px) {
+    .callout .grid--1x2{
+        grid-template-columns: 1fr auto;
+    }
+    .callout__content{
+        text-align: left;
+    }
+    .callout .btn{
+        justify-self: start;
+        margin-left: 2rem;
+    }
 }
