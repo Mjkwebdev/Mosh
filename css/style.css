@@ -206,6 +206,13 @@ a {
   white-space: nowrap;
 }
 
+.btn .icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  vertical-align: middle;
+}
+
 .btn--stretch {
   padding-left: 6rem;
   padding-right: 6rem;
@@ -254,6 +261,7 @@ a {
   color: #fff;
 }
 
+
 @media screen and (min-width: 1024px) {
   .btn {
     font-size: 14px;
@@ -283,7 +291,7 @@ a {
 .input-group .input {
   border: 0;
   flex-grow: 1;
-  padding: 25px;
+  padding: 1.5rem 2rem;
 }
 
 .input-group .btn {
@@ -477,11 +485,11 @@ a {
   position: relative;
 }
 
-.testimonial__image > img {
+.testimonial__image>img {
   width: 100%;
 }
 
-.testimonial__image > .icon-container {
+.testimonial__image>.icon-container {
   position: absolute;
   right: -29px;
   top: 3rem;
@@ -631,12 +639,12 @@ a {
   border-bottom: 1px solid #222;
 }
 
-.nav__items > a {
+.nav__items>a {
   color: #d2d0db;
   transition: color 0.3s;
 }
 
-.nav__items > a:hover {
+.nav__items>a:hover {
   color: #fff;
 }
 
@@ -695,5 +703,32 @@ a {
 
   .hero {
     padding-top: 0;
+  }
+}
+
+/*block domain*/
+
+.block--domain {
+  box-shadow: 0 0 30px 20px #e6ebee;
+  border: 0;
+  max-width: 670px;
+  margin: 4rem auto;
+}
+
+.block-domain__prices {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  font-size: 2rem;
+  font-weight: 600;
+  justify-items: center;
+  max-width: 750px;
+  margin: 0 auto;
+
+}
+
+@media screen and (min-width:796px) {
+  .block-domain__prices {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
 }
