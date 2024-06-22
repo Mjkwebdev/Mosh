@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head> 
 <body>
  <header>
@@ -29,12 +30,12 @@
  <!-- Hero  -->
  <section class="block block--dark block--skewed--left hero">
   <div class="container grid grid--1x2">
-     <header class="block__header hero__content ">
+     <header class="block__header hero__content " data-aos="fade-right">
       <h1 class="block__heading"> Cloud Hosting For Pros</h1>
       <p class="hero__tagline"> Deploy Your websites in less than 60 seconds</p>
       <a href="\" class="btn btn--accent btn--stretch">Get Started</a>
      </header>  
-     <picture>
+     <picture data-aos="zoom-in-left">
       <source type="images/webp" srcset="images/banner.webp 1x,images/banner@2x.webp 2x"/> 
       <source type="images/png" srcset="images/banner.png 1x, images/banner@2x.png 2x"/> 
        <img class="hero__image" src="images/banner.png">
@@ -42,8 +43,8 @@
     </div>
 </section>
 <!-- Domain-block -->
-<section class="block container ">
-  <header class="block__header">
+<section class="block container" data-aos="fade-up">
+  <header  class="block__header">
     <h2> Starting at  $9 per month</h2>
     <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, nobis?
     </p>
@@ -68,7 +69,7 @@
     </ul>
 </section>
 <!-- Plans block -->
-<section class="block container block-plan">
+<section class="block container block-plan" data-aos="fade-up">
   <div class="grid grid--1x3">
  <div class="plan">
   <div class="card card--secondary">
@@ -138,13 +139,13 @@
  </div>
 </section>
 <!-- Feature block -->
-<section class="block container">
+<section class="block container"  data-aos="fade-up">
   <header class="block__header">
    <h2>Host on the Cloud to Keep Growing </h2>
    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, beatae.</p>
   </header>
    <article class="grid grid--1x2 feature">
-      <div class="feature__content"><span class="icon-container">
+      <div class="feature__content" data-aos="fade-right"><span class="icon-container">
        </svg><svg class="icon icon--primary">
          <use xlink:href="images/sprite.svg#easy"></use>
        </svg>
@@ -155,15 +156,16 @@
    </p>
    <a href="#" class="link-arrow"> LEARN MORE</a>
    </div>
-   <picture>
+   <picture data-aos="zoom-in-left">
     <source type="images/webp" srcset="images/easy.webp 1x, images/easy@2x.webp 2x">
     <source type="images/jpg" srcset="images/easy.jpg 1x, images/easy@2x.jpg 2x">
     <img  class="feature__image" src="images/easy@2x.webp">
    </picture>
    </article>
    <!-- part2 -->
-   <article class="grid grid--1x2 feature">
-      <div class="feature__content">
+   <article class="grid grid--1x2 feature" data-aos="fade-up">
+    
+      <div class="feature__content" data-aos="fade-right">
        <span class="icon-container">
        </svg><svg class="icon icon--primary">
          <use xlink:href="images/sprite.svg#clock"></use>
@@ -175,7 +177,7 @@
    </p>
    <a href="#" class="link-arrow"> LEARN MORE</a>
    </div>
-   <picture>
+   <picture data-aos="zoom-in-left">
     <source type="images/webp" srcset="images/fast.webp 1x, images/fast@2x.webp 2x">
     <source type="images/jpg" srcset="images/fast.jpg 1x, images/fast@2x.jpg 2x">
     <img class="feature__image" src="images/fast@2x.jpg">
@@ -183,7 +185,7 @@
    </article>
    <!-- Part 3 -->
    <article class="grid grid--1x2 feature">
-     <div class="feature__content">
+     <div class="feature__content" data-aos="fade-right">
        <span class="icon-container">
       </svg><svg class="icon icon--primary">
         <use xlink:href="images/sprite.svg#wordpress"></use>
@@ -195,7 +197,7 @@
   </p>
   <a href="#" class="link-arrow"> LEARN MORE</a>
   </div>
-  <picture>
+  <picture data-aos="zoom-in-left">
    <source type="images/webp" srcset="images/wordpress.webp 1x, images/wordpress@2x.webp 2x">
    <source type="images/jpg" srcset="images/wordpress.jpg 1x, images/wordpress@2x.jpg 2x">
    <img  class="feature__image" src="images/wordpress@2x.webp">
@@ -203,7 +205,7 @@
   </article>
   <!-- Part 4 -->
   <article class="grid grid--1x2 feature">
-   <div class="feature__content">
+   <div class="feature__content" data-aos="fade-right">
      <span class="icon-container">
     </svg><svg class="icon icon--primary">
       <use xlink:href="images/sprite.svg#clock"></use>
@@ -215,7 +217,7 @@
  </p>
  <a href="#" class="link-arrow"> LEARN MORE</a>
  </div>
- <picture>
+ <picture data-aos="zoom-in-left">
  <source type="images/webp" srcset="images/support.webp 1x, images/support@2x.webp 2x">
  <source type="images/jpg" srcset="images/support.jpg 1x, images/support@2x.jpg 2x">
  <img  class="feature__image" src="images/support@2x.webp">
@@ -223,7 +225,7 @@
  </article>
  </section>
  <!-- domain showcase -->
- <section class="block block--dark block--skewed--right block-showcase">
+ <section class="block block--dark block--skewed--right block-showcase" data-aos="fade-up">
   <header class="block__header">
     <h2> User-Friendly Control Panel </h2>
 </header>
@@ -246,7 +248,6 @@
   <h3 class="media__title">Easy Start and Manage Updates</h3>
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum officiis 
     tempora eum error asperiores suscipit iusto similique exercitationem nemo repellendus!
-  
   </p>
     </div>
   </div>
@@ -289,7 +290,7 @@
 </section>
 
  <!-- Testimonial block -->
- <section class="block">
+ <section class="block" data-aos="fade-up">
   <header class="block__header">
     <h2> What our Customers are Saying</h2>
     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum.
@@ -329,7 +330,7 @@
   </div>
 </section>
 <!-- callout -->
-<div class="block--callout block container ">
+<div class="block--callout block container "data-aos="fade-up">
 <div class="callout callout--primary">
   <div class="grid grid--1x2">
     <div class="callout__content">
@@ -410,5 +411,9 @@
   </section>
   </footer>
 <script src="js/code.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
